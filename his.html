@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bundle of His</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* General Reset and Styling */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(to right, #fff, #ffe6f0);
+}
+
+/* Sidebar Navigation */
+.sidebar {
+  width: 250px;
+  background-color: #8b0000;
+  color: white;
+  padding: 30px 20px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+}
+
+.sidebar h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+  color: #ffccff;
+}
+
+/* Main Content */
+.content {
+  margin-left: 270px;
+  padding: 40px 30px;
+  background-color: #ffffff;
+  flex: 1;
+}
+
+.section-title {
+  font-size: 36px;
+  color: #8b0000;
+  border-left: 5px solid purple;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
+.image-style {
+  display: block;
+  margin: 30px auto;
+  max-width: 100%;
+  border: 4px solid #8b0000;
+  border-radius: 10px;
+}
+
+/* Headings and Text */
+h2 {
+  font-size: 26px;
+  color: #4b0082;
+  margin-top: 30px;
+}
+
+h3 {
+  font-size: 20px;
+  color: #b22222;
+}
+
+p, li {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* Lists */
+ul, ol {
+  margin-left: 20px;
+  padding-left: 20px;
+}
+
+/* Navigation Links at Bottom */
+.navigation-links {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  background-color: #8b0000;
+  padding: 10px 25px;
+  margin: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  background-color: purple;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    position: relative;
+    padding: 20px;
+  }
+
+  .content {
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Electrical System</h2>
+    <ul>
+      <li><a href="#his">Bundle of His</a></li>
+      <li><a href="#location">Location</a></li>
+      <li><a href="#functions">Functions</a></li>
+      <li><a href="#importance">Importance</a></li>
+      <li><a href="#key-points">Key Points</a></li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h1 id="his" class="section-title">Bundle of His</h1>
+
+    <img src="images/bundle-of-hos.webp" alt="Bundle of His" class="image-style" width="300" height="200" />
+
+    <h2>What is the Bundle of His?</h2>
+    <p>The Bundle of His is a collection of heart muscle cells that play an important role in the electrical conduction system of the heart. It helps carry electrical signals from the AV node to the ventricles, enabling proper heartbeats.</p>
+
+    <h2 id="location">Location of the Bundle of His</h2>
+    <p>The Bundle of His is located in the interventricular septum (the wall between the left and right ventricles). It begins at the AV node and travels down toward the apex (bottom) of the heart.</p>
+
+    <img src="images/his-location.png" alt="Bundle of His Location" class="image-style" width="600" height="400" />
+
+    <h2 id="functions">Functions of the Bundle of His</h2>
+    <ol>
+      <li><h3>Signal Transmission:</h3>
+        <p>The Bundle of His receives the electrical impulse from the AV node and transmits it to the ventricles through the right and left bundle branches.</p>
+      </li>
+
+      <li><h3>Coordinated Contraction:</h3>
+        <p>It ensures that both ventricles receive the signal at the same time so they can contract together and pump blood efficiently throughout the body.</p>
+      </li>
+    </ol>
+
+    <h2 id="importance">Importance of Bundle of His</h2>
+    <p>Without the Bundle of His, the electrical signal would not properly reach the ventricles, leading to weak or uncoordinated heartbeats. It is vital for synchronized pumping of blood to the lungs and the rest of the body.</p>
+
+    <h2 id="key-points">Key Points:</h2>
+    <ul>
+      <li>Connects AV node to the ventricles.</li>
+      <li>Splits into right and left bundle branches.</li>
+      <li>Ensures proper timing of ventricular contraction.</li>
+    </ul>
+
+    <p>Any damage to the Bundle of His can lead to heart block or abnormal rhythms, which may require a pacemaker or medical treatment to regulate the heartbeat.</p>
+
+    <div class="navigation-links">
+      <a href="index.html" class="nav-link">Go Back</a>
+      <a href="#" class="nav-link">Top</a>
+    </div>
+  </div>
+</body>
+</html>
+

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Purkinje Fibers</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>/* Base styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+/* Sidebar styling */
+.sidebar {
+  background-color: #2c2c2c;
+  color: white;
+  width: 250px;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+}
+
+.sidebar h2 {
+  color: #ff4b5c;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.sidebar ul li a:hover {
+  color: #c56cf0;
+}
+
+.sidebar .navigation-links {
+  margin-top: 30px;
+}
+
+.sidebar .nav-link {
+  display: block;
+  padding: 10px 15px;
+  margin-top: 10px;
+  background-color: #ff4b5c;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.sidebar .nav-link:hover {
+  background-color: #c0392b;
+}
+
+/* Content styling */
+.content {
+  margin-left: 270px;
+  padding: 30px;
+  flex: 1;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.section-title {
+  color: #6a0dad;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.content h2 {
+  color: #ff4b5c;
+  margin-top: 30px;
+}
+
+.content ul {
+  margin-left: 20px;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.image-style {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #6a0dad;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .content {
+    margin-left: 0;
+  }
+}
+</style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Electrical System</h2>
+    <ul>
+      <li><a src="#purkinje">Purkinje Fibers</a></li>
+    </ul>
+    <div class="navigation-links">
+      <a class="nav-link" href="index.html">Back to Home</a>
+    </div>
+  </div>
+
+  <div class="content">
+    <h1 class="section-title" id="purkinje">Purkinje Fibers</h1>
+
+    <p>
+      <strong>Purkinje fibers</strong> are a special network of fibers found in the inner ventricular walls of the heart. They are part of the heart's electrical conduction system and are responsible for carrying the electrical signals from the Bundle of His deep into the muscular walls (myocardium) of the ventricles.
+    </p>
+
+    <img src="images/purkinje-fiber.jpeg" alt="Purkinje Fibers Diagram" class="image-style"/>
+
+    <h2>Function of Purkinje Fibers:</h2>
+    <ul>
+      <li>They rapidly conduct the electrical impulse throughout the ventricles.</li>
+      <li>This ensures that both the left and right ventricles contract at the same time.</li>
+      <li>The synchronized contraction helps pump blood efficiently to the lungs and the rest of the body.</li>
+    </ul>
+
+    <h2>Location:</h2>
+    <p>
+      Purkinje fibers are located at the base and inner walls of the ventricles and are the final link in the electrical conduction pathway of the heart.
+    </p>
+
+    <h2>Interesting Fact:</h2>
+    <p>
+      These fibers are named after the Czech scientist **Jan Evangelista Purkyně**, who discovered them in 1839.
+    </p>
+
+    <div class="navigation-links">
+      <a class="nav-link" href="index.html">Back to Home</a>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Atrioventricular (AV) Node</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff;
+      color: #333;
+    }
+
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 240px;
+      background: linear-gradient(to bottom right, #8a2be2, #ff1493);
+      padding: 20px;
+      color: white;
+    }
+
+    .sidebar h2 {
+      font-size: 22px;
+      margin-bottom: 30px;
+      border-bottom: 2px solid white;
+      padding-bottom: 10px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+    }
+
+    .sidebar ul li {
+      margin: 15px 0;
+    }
+
+    .sidebar ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .sidebar ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .content {
+      margin-left: 260px;
+      padding: 40px 30px;
+      max-width: 1000px;
+    }
+
+    .section-title {
+      color: #8a2be2;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      color: #000;
+      margin-top: 30px;
+      font-size: 22px;
+    }
+
+    h3 {
+      color: #8a2be2;
+      margin-bottom: 5px;
+    }
+
+    p, li {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .image-style {
+      margin: 20px 0;
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    ol {
+      padding-left: 20px;
+    }
+
+    ul {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+
+    .navigation-links {
+      margin-top: 40px;
+      display: flex;
+      gap: 15px;
+    }
+
+    .nav-link {
+      background-color: #8a2be2;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .nav-link:hover {
+      background-color: #5f1a9c;
+    }
+
+    @media (max-width: 768px) {
+      .sidebar {
+        position: static;
+        width: 100%;
+        height: auto;
+      }
+
+      .content {
+        margin-left: 0;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Electrical System</h2>
+    <ul>
+      <li><a href="#av-node">AV Node</a></li>
+      <li><a href="#location">Location</a></li>
+      <li><a href="#functions">Functions</a></li>
+      <li><a href="#importance">Importance</a></li>
+      <li><a href="#key-points">Key Points</a></li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h1 id="av-node" class="section-title">Atrioventricular (AV) Node</h1>
+
+    <img src="images/av-node.jpeg" alt="Atrioventricular Node" class="image-style" width="300" height="200" />
+
+    <h2>What is the Atrioventricular Node?</h2>
+    <p>The Atrioventricular (AV) Node is a critical part of the heart's electrical conduction system. It plays an essential role in maintaining a steady heartbeat by regulating the signal that controls the heart’s rhythm.</p>
+
+    <h2 id="location">Location of the AV Node</h2>
+    <p>The AV node is located in the lower part of the right atrium, near the septum (the wall separating the right and left sides of the heart), just above the tricuspid valve.</p>
+
+    <img src="images/WhatsApp Image 2024-09-13 at 4.13.39 PM.jpeg" alt="AV Node Location in Heart" class="image-style" width="600" height="400" />
+
+    <h2 id="functions">Functions of the AV Node</h2>
+    <ol>
+      <li>
+        <h3>Signal Delay:</h3>
+        <p>The AV node delays the electrical signal that comes from the Sinoatrial (SA) node. This delay allows the atria to fully contract and empty their blood into the ventricles before the ventricles contract.</p>
+      </li>
+      <li>
+        <h3>Passage of Signal:</h3>
+        <p>After the delay, the AV node passes the electrical signal to the Bundle of His, which then carries it to the ventricles.</p>
+      </li>
+      <li>
+        <h3>Backup Pacemaker:</h3>
+        <p>If the SA node fails to work properly, the AV node can act as a backup pacemaker, although it beats slower than the SA node.</p>
+      </li>
+    </ol>
+
+    <h2 id="importance">Importance of AV Node in Heart Rhythm</h2>
+    <p>Without the AV node, the electrical impulse would travel too quickly from the atria to the ventricles, leading to uncoordinated contractions. The AV node ensures the heart beats in a proper, coordinated manner.</p>
+
+    <h2 id="key-points">Key Points:</h2>
+    <ul>
+      <li>Acts as a gatekeeper between atria and ventricles.</li>
+      <li>Delays signal to allow proper blood flow.</li>
+      <li>Can act as a secondary pacemaker.</li>
+    </ul>
+
+    <p>The AV node is essential for healthy heart function. Disorders or damage to the AV node can result in arrhythmias (irregular heartbeats) or heart block that may require medical attention.</p>
+
+    <div class="navigation-links">
+      <a href="index.html" class="nav-link">Go Back</a>
+      <a href="#" class="nav-link">Top</a>
+    </div>
+  </div>
+</body>
+</html>

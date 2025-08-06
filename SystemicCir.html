@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Systemic Circulation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      display: flex;
+      min-height: 100vh;
+      background: linear-gradient(to right, #6a0572, #ab0c46);
+      color: #fff;
+    }
+
+    .sidebar {
+      width: 230px;
+      background-color: #1a1a1a;
+      padding: 20px;
+      position: fixed;
+      height: 100vh;
+    }
+
+    .sidebar h2 {
+      color: #fff;
+      font-size: 24px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #fff;
+      padding-bottom: 10px;
+    }
+
+    .sidebar a {
+      display: block;
+      color: #fff;
+      padding: 10px;
+      margin-bottom: 10px;
+      text-decoration: none;
+      background-color: #ab0c46;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: #fff;
+      color: #ab0c46;
+      font-weight: bold;
+    }
+
+    .content {
+      margin-left: 260px;
+      padding: 30px;
+      flex: 1;
+    }
+
+    h1, h2, h3 {
+      color: #ffcbcb;
+    }
+
+    p, li {
+      color: #fff;
+      line-height: 1.7;
+      margin-bottom: 10px;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+
+    .back-home {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 10px 20px;
+      background-color: #fff;
+      color: #ab0c46;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+      transition: 0.3s;
+    }
+
+    .back-home:hover {
+      background-color: #ab0c46;
+      color: #fff;
+    }
+
+    @media (max-width: 768px) {
+      .sidebar {
+        position: static;
+        width: 100%;
+        height: auto;
+      }
+      .content {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>Systemic Circulation</h2>
+    <a href="#section1">What is Systemic Circulation?</a>
+    <a href="#section2">Detailed Process</a>
+    <a href="#section3">Key Points</a>
+    <a href="#top">Top</a>
+    <a href="index.html">🏠 Back to Home</a>
+  </div>
+
+  <div class="content" id="top">
+    <section id="section1">
+      <h1>Systemic Circulation</h1>
+      <img src="images/systematic-circulation2.svg" alt="Systemic Circulation Image" width="300" height="200">
+      <h2>What is Systemic Circulation?</h2>
+      <p>Systemic circulation is the part of the cardiovascular system that carries oxygenated blood from the heart to the body and returns deoxygenated blood back to the heart.</p>
+    </section>
+
+    <section id="section2">
+      <img src="images/systematic ciru2" alt="Systemic Circulation Diagram" width="300" height="400">
+      <h2>Detailed Explanation</h2>
+      <ol>
+        <li><h3>Oxygenated Blood Leaves the Heart:</h3>
+          <ul>
+            <li>Blood returns to the left atrium of the heart via the pulmonary veins.</li>
+            <li>The left atrium pushes blood through the mitral valve into the left ventricle.</li>
+          </ul>
+        </li>
+        <li><h3>Blood is Pumped to the Body:</h3>
+          <ul>
+            <li>Left ventricle pumps blood through the aortic valve into the aorta.</li>
+            <li>Aorta branches into arteries to supply the whole body.</li>
+          </ul>
+        </li>
+        <li><h3>Oxygen is Delivered to the Tissues:</h3>
+          <ul>
+            <li>Arteries branch into arterioles and capillaries for oxygen exchange.</li>
+            <li>Capillaries exchange oxygen and nutrients with cells.</li>
+          </ul>
+        </li>
+        <li><h3>Deoxygenated Blood Returns:</h3>
+          <ul>
+            <li>Venules collect blood and form veins.</li>
+            <li>Veins return blood to the right atrium via superior and inferior vena cava.</li>
+          </ul>
+        </li>
+        <li><h3>The Cycle Continues:</h3>
+          <ul>
+            <li>Blood flows to the right ventricle and continues to pulmonary circulation.</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+    <section id="section3">
+      <h2>Key Points of Systemic Circulation</h2>
+      <h3>Aorta:</h3>
+      <p>The main artery that carries oxygen-rich blood from the left ventricle to the body.</p>
+      <h3>Arteries and Capillaries:</h3>
+      <p>Distribute oxygen and nutrients to the tissues.</p>
+      <h3>Veins:</h3>
+      <p>Return deoxygenated blood to the heart via the superior and inferior vena cava.</p>
+    </section>
+
+    <a class="back-home" href="index.html">← Back to Home</a>
+  </div>
+</body>
+</html>

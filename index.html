@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Human Heart</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/human Heart.jpeg" type="image/jpeg">
+  <style>
+    @font-face {
+      font-family: 'PlaywriteAUNSW-ExtraLight';
+      src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap') format('woff2');
+    }
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+
+    .form-control {
+      width: 200px;
+    }
+
+    @media (max-width: 768px) {
+      .form-control {
+        width: 100%;
+        margin-top: 10px;
+      }
+    }
+     #welcome-section {
+    background-color: #000;
+    overflow: hidden;
+  }
+
+  .heart-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    height: 100px;
+    background-color: red;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    animation: beat 1s infinite;
+    z-index: 0;
+  }
+
+  .heart-bg::before,
+  .heart-bg::after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+  }
+
+  .heart-bg::before {
+    top: -60px;
+    left: 0;
+  }
+
+  .heart-bg::after {
+    left: 60px;
+    top: 0;
+  }
+
+  @keyframes beat {
+    0%, 100% {
+      transform: translate(-50%, -50%) rotate(-45deg) scale(1);
+    }
+    50% {
+      transform: translate(-50%, -50%) rotate(-45deg) scale(1.2);
+    }
+  }
+  #welcome-section .z-1 {
+    z-index: 1;
+  } 
+  #welcome-section {
+    font-family:PlaywriteAUNSW-ExtraLight;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    opacity: 0.7; /* Optional: make text stand out */
+  }
+
+  #welcome-section .z-1 {
+    z-index: 1;
+  }
+
+  #welcome-section h1,
+  #welcome-section p {
+    text-shadow: 2px 2px 5px #000;
+  }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-danger shadow-sm">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">The Human Heart</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeart"
+      aria-controls="navbarHeart" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarHeart">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="chambersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Chambers
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="chambersDropdown">
+            <li><a class="dropdown-item" href="RightAtrium.html">Right Atrium</a></li>
+            <li><a class="dropdown-item" href="RightVentricle.html">Right Ventricle</a></li>
+            <li><a class="dropdown-item" href="LeftAtrium.html">Left Atrium</a></li>
+            <li><a class="dropdown-item" href="LeftVentricle.html">Left Ventricle</a></li>
+          </ul>
+        </li>
+
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="valvesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Valves
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="valvesDropdown">
+            <li><a class="dropdown-item" href="TricuspidValve.html">Tricuspid Valve</a></li>
+            <li><a class="dropdown-item" href="PulmonaryValve.html">Pulmonary Valve</a></li>
+            <li><a class="dropdown-item" href="MitralValve.html">Mitral Valve</a></li>
+            <li><a class="dropdown-item" href="AorticValve.html">Aortic Valve</a></li>
+          </ul>
+        </li>
+
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="circulationDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Blood Circulation
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="circulationDropdown">
+            <li><a class="dropdown-item" href="SystemicCir.html">Systemic Circulation</a></li>
+            <li><a class="dropdown-item" href="PulmonaryCir.html">Pulmonary Circulation</a></li>
+          </ul>
+        </li>
+
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="electricalDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Electrical System
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="electricalDropdown">
+            <li><a class="dropdown-item" href="Sinoatriaelecl.html">SA Node</a></li>
+            <li><a class="dropdown-item" href="Atrioventricularelec.html">AV Node</a></li>
+            <li><a class="dropdown-item" href="his.html">Bundle of His</a></li>
+            <li><a class="dropdown-item" href="purkinje.html">Purkinje Fibers</a></li>
+          </ul>
+        </li>
+      </ul>
+
+     
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-primary" type="submit">
+          🔍
+        </button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<section class="text-white" id="welcome-section" style="background-color: black; height: 100vh; overflow: hidden;">
+  <div class="container-fluid h-100">
+    <div class="row h-100">
+      
+      <!-- Left Half - Video -->
+      <div class="col-md-6 p-0">
+        <video autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover;">
+          <source src="images/video-of-heart.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- Right Half - Welcome Text -->
+      <div class="col-md-6 d-flex flex-column justify-content-center align-items-center text-center p-5" style="background-color:#040942c7">
+        <h1 class="display-5 fw-bold">Welcome on my website</h1>
+        <p class="lead">Nazia Danish here — I made this web</p>
+        <a href="https://my1stwebresumeportfolio.netlify.app/" class="btn btn-danger mt-3">More About Me</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
