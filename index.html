@@ -203,8 +203,26 @@
   </div>
 </section>
 
+<script>
+  window.addEventListener("load", function () {
+    setTimeout(function () {
+      alert("Welcome on my website!");
+
+      setTimeout(function () {
+        let userAnswer = confirm("Do you like to study about the human heart?");
+        
+        if (userAnswer) {
+          alert("Now you can study about the human heart.");
+        } else {
+          alert("You can visit another website.");
+        }
+      }, 1000);
+    }, 1000);
+  });
+</script>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
